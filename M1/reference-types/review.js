@@ -22,6 +22,7 @@ console.log("1c. moreBooks[1]:", moreBooks[1]);
 const lotteryNumbers = [81, 62, 53];
 const nextLottoNums = [11, 22, 35];
 const allNumbers = lotteryNumbers.concat(nextLottoNums);
+console.log(allNumbers);
 
 // // COMMENT ME IN WHEN YOU WANT TO RUN THIS CODE
 // console.log("2a. allNumbers:", allNumbers);
@@ -36,7 +37,7 @@ const allNumbers = lotteryNumbers.concat(nextLottoNums);
 let person = {
   firstName: "avery",
   lastName: "satter",
-};
+}; 
 
 // Hmmm... This line isn't updating the person object. Can you fix it?
 person.firstName.toUpperCase();

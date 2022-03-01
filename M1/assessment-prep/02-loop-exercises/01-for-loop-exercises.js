@@ -125,6 +125,7 @@ let n2 = 4; //  4 * 3 * 2 * 1 = 24
  */
 let pin = 0704;
 
+
 /** EXERCISE 9
  *
  * Write a program that will check if two strings are palindromes.

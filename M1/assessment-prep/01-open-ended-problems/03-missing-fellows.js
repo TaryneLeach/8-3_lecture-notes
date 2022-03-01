@@ -79,3 +79,18 @@ let googleSheetsData = [
   "deREk pETeRSOn",
   "ANToNIO shIVeRs",
 ];
+
+function fixThisDamnMess(salesForceData, googleSheetsData){
+let fixedArr = []
+
+for(let salesforce of salesForceData) {
+if(salesForceData !== googleSheetsData) {
+ fixedArr = salesForceData.push(googleSheetsData)
+}
+
+  } for(let fixed of fixedArr) {
+    if(fixed.name === fixedName.toUpperCase()) {
+      fixedArr.name.toLowerCase()
+    }
+  }
+}
