@@ -7,7 +7,19 @@
  *
  * @returns {Number} - a random decimal number between 30 and 70
  */
-function randomDecimal30To70() {}
+function randomDecimal30To70() {
+ // return Math.random() * 40 + 30
+let rand = Math.random();
+rand = rand * 40 // stretch by the width of the interval
+
+// now we have a random number between 0 and 40
+rand = rand + 30
+
+// now we have a random num between 30 and 70
+
+return rand
+}
+// console.log(randomDecimal30To70());
 
 /**
  * REVIEW ACTIVITY - Part 2
@@ -19,7 +31,10 @@ function randomDecimal30To70() {}
  *
  * @returns {Integer} - a random integer between 30 and 70
  */
-function randomInteger30To70() {}
+function randomInteger30To70() {
+  return Math.floor(Math.random() * 40 ) + 30
+}
+// console.log(randomInteger30To70())
 
 /**
  * ACTIVITY 1
@@ -38,11 +53,19 @@ function randomInteger30To70() {}
  * @param {String} key
  * @returns {Boolean}
  **/
-function isKeyInObject1(obj, key) {}
+function isKeyInObject1(obj, key) {
+Object.keys(key); // this only gives first set of keys I believe 
+}
 
-function isKeyInObject2(obj, key) {}
+function isKeyInObject2(obj, key) {
+  obj.hasOwnProperty(key);
+}
 
-function isKeyInObject3(obj, key) {}
+function isKeyInObject3(obj, key) {
+  if (key in obj) {
+    return true;
+  }
+}
 
 let exampleObject = {
   timesIveBeenToBrazil: 0,
@@ -65,14 +88,35 @@ let exampleObject = {
  * @returns {String} - name of the highest paid role
  *
  */
-function highestSalary(roles) {}
+function highestSalary(roles) {
+  let roleName = ''
+  let roleSalary = 0
+
+  /* for (let jobTitle in roles) {
+    console.log(jobTitle);
+    console.log(roles[jobTitle]); {
+    if (roles[jobTitle] > roleSalary)
+     roleSalary = roles[jobTitle]
+     roleName = jobTitle
+  }
+}
+  return roleName */
+  console.log('keys', Object.keys(roles));
+  console.log('values', Object.values(roles));
+  console.log('entries', Object.entries(roles));
+
+  let entries = Object.entries(roles);
+  for (let i = 0; i < entries.length; i++);
+  for (let entry of entries);
+
+}
 
 let exampleRoles = {
   juniorDev: 90000,
   seniorDev: 160000,
   engineeringManager: 200000,
 };
-
+highestSalary(exampleRoles);
 /**
  * RESEARCH ACTIVITY
  *
