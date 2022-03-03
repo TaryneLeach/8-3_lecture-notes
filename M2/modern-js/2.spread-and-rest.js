@@ -11,13 +11,8 @@
 const astronauts = ["Jessica Watkins", "Robert Shane", "Nicole Mann"];
 const [first, ...others] = astronauts;
 
-<<<<<<< HEAD
-console.log(first); // 'Jessica Watkins'
-console.log(others); // ['Robert Shane', 'Nicole Mann']
-=======
 console.log(first); // "Jessica Watkins"
 console.log(others); // ["Robert Shane", "Nicole Mann"]
->>>>>>> e30763bfbfa8bbc89c36c3391436af4c890979b1
 
 /**
  * 3. Is the code below an example of the "rest" or "spread" syntax? How do you know? Write a brief response.
