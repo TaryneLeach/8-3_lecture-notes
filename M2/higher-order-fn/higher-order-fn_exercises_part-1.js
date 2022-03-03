@@ -4,11 +4,11 @@
  */
 
 function truthy() {
-  return true;
+  return true; // nope regular function
 }
 
 function falsy() {
-  return !truthy();
+  return !truthy(); // yes returning another function
 }
 
 falsy(); //> false
@@ -19,15 +19,15 @@ falsy(); //> false
  */
 
 function left() {
-  return 'Left';
+  return 'Left'; // no
 }
 
 function right() {
-  return 'Right';
+  return 'Right'; // no
 }
 
 function go(goLeft = true) {
-  return goLeft ? left : right;
+  return goLeft ? left : right; // yes
 }
 
 /**
@@ -37,12 +37,12 @@ function go(goLeft = true) {
 
 const directions = [];
 
-function storeDirections(direction) {
+function storeDirections(direction) { // no
   directions.push(direction);
 }
 
 function go(direction, operation) {
-  operation(direction);
+  operation(direction); // yes
   return direction;
 }
 
@@ -64,9 +64,28 @@ function transform(text, fn) {
   return fn(text);
 }
 
+ 
+text (fn)
+return text.toUpperCase()
+
+
+
+text (fn)
+return text.toLowerCase()
+
+
+
+text (fn) 
+return text.split(' ').join('-')
+
+
+text (fn)
+return 
+
+
 /**
  * Use the function above to transform the text in the following ways. For each line below, you will need to write an anonymous function.
- *
+ * 
  *
  * "left" -> "LEFT"
  * "RiGhT" -> "right"
