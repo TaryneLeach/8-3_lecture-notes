@@ -64,26 +64,11 @@ function transform(text, fn) {
   return fn(text);
 }
 
-<<<<<<< HEAD
- 
-text (fn)
-return text.toUpperCase()
 
 
 
-text (fn)
-return text.toLowerCase()
 
 
-
-text (fn) 
-return text.split(' ').join('-')
-
-
-text (fn)
-return 
-
-=======
 const capitalize = () => {};
 
 // named
@@ -91,7 +76,6 @@ transform('hello', capitalize);
 
 // anonymous
 transform('hello', function () {});
->>>>>>> e181697fbb1c4286af86d636a56a1c612e778523
 
 /**
  * Use the function above to transform the text in the following ways. For each line below, you will need to write an anonymous function.
@@ -103,6 +87,29 @@ transform('hello', function () {});
  * "up Down left" -> "UDL"
  */
 
+ fn(text).toUpperCase()
+
+
+
+ fn(text).toLowerCase()
+ 
+ 
+ 
+ fn(text).split((' ').join('-'))
+
+ // split each word into an array, using the white space as the delimiter
+  const textArr = text.split(' ')
+ // create temp variable to store results
+ let result = ''
+ // loop through the array
+ for(word of textArr) {
+   result += word[0]
+  // add the first character of each word to the result
+  // capitalize the result
+ }
+  result = result.toUpperCase()
+ 
+ 
 /**
  * Write a fn called each which accepts two parameters:
  *  - an array
@@ -110,7 +117,11 @@ transform('hello', function () {});
  * The each fn loops through the given array and runs the callback function on each of it's elements.
  */
 function each(arr, fn) {
-  // write your code here
+  for (let element of arr) {
+   fn(element)
+   // for (let i = 0; i < arr.length; i++) {
+     // fn(arr[i]) }
+  }
 }
 
 // The following call to each should print
@@ -138,7 +149,12 @@ each([1, 2, 3, 4], function (value) {
  * The map fn should return a new array where each new element is the return value from the anonymous function with the argument as the original element value.
  */
 function map(arr, fn) {
-  // write your code here
+  let newArr = []
+  // loop through existing array
+ for (let element of arr) {
+   newArr.push(fn(element));
+ }
+ return newArr;
 }
 
 // The following call to map should return
@@ -154,7 +170,19 @@ map([1, 2, 3, 4], function (value) {
  * The reject fn should return a new array containing all of the values that do not return true to the callback
  */
 function reject(arr, fn) {
-  // write your code here
+  // create new array empty
+ let rejects = []
+ // loop through the array
+ for (let element of arr) {
+  // store the call back function return value in a variable
+  let isAccepted = fn(element)
+  if (!isAccepted) {
+    rejects.push(element)
+  }
+  // if the variable is false => then add the value to the array
+  // return the array
+ }
+  return rejects;
 }
 
 // The following call to reject should return
