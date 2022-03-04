@@ -150,11 +150,10 @@ each([1, 2, 3, 4], function (value) {
  */
 function map(arr, fn) {
   let newArr = []
-  // loop through existing array
- for (let element of arr) {
-   newArr.push(fn(element));
- }
- return newArr;
+  for(let element of arr) {
+     newArr.push(fn(element))    
+}
+  return newArr; 
 }
 
 // The following call to map should return
