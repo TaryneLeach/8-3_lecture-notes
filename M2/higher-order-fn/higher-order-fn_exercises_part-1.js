@@ -87,7 +87,6 @@ transform('hello', function () {});
  * "up Down left" -> "UDL"
  */
 
-<<<<<<< HEAD
  fn(text).toUpperCase()
 
 
@@ -111,7 +110,6 @@ transform('hello', function () {});
   result = result.toUpperCase()
  
  
-=======
 console.log(
   transform('up Down left', function (text) {
     // split each word into an array, using the whitespace as the delimiter
@@ -130,7 +128,6 @@ console.log(
   }),
 );
 
->>>>>>> d6ea81c34a03a4698d9573167f75328433cfd256
 /**
  * Write a fn called each which accepts two parameters:
  *  - an array
@@ -138,18 +135,15 @@ console.log(
  * The each fn loops through the given array and runs the callback function on each of it's elements.
  */
 function each(arr, fn) {
-<<<<<<< HEAD
   for (let element of arr) {
    fn(element)
    // for (let i = 0; i < arr.length; i++) {
      // fn(arr[i]) }
-=======
   for (let i = 0; i < arr.length; i++) {
     // for (let e of arr) { // for...of
     // run the function on each element
     fn(arr[i]);
     // fn(e); // for...of
->>>>>>> d6ea81c34a03a4698d9573167f75328433cfd256
   }
 }
 
@@ -180,13 +174,11 @@ function each(arr, fn) {
  * The map fn should return a new array where each new element is the return value from the anonymous function with the argument as the original element value.
  */
 function map(arr, fn) {
-<<<<<<< HEAD
   let newArr = []
   for(let element of arr) {
      newArr.push(fn(element))    
 }
   return newArr; 
-=======
   let newArr = [];
   // loop through the arr
   for (let e of arr) {
@@ -195,7 +187,6 @@ function map(arr, fn) {
   }
 
   return newArr;
->>>>>>> d6ea81c34a03a4698d9573167f75328433cfd256
 }
 
 // The following call to map should return
@@ -213,7 +204,6 @@ function map(arr, fn) {
  *  - a callback fn
  * The reject fn should return a new array containing all of the values that do not return true to the callback
  */
-<<<<<<< HEAD
 function reject(arr, fn) {
   // create new array empty
  let rejects = []
@@ -227,7 +217,6 @@ function reject(arr, fn) {
   // if the variable is false => then add the value to the array
   // return the array
  }
-=======
 function reject(arr, isAccepted) {
   // create a new arr empty
   let rejects = [];
@@ -243,7 +232,6 @@ function reject(arr, isAccepted) {
   }
 
   // return the new arr
->>>>>>> d6ea81c34a03a4698d9573167f75328433cfd256
   return rejects;
 }
 
