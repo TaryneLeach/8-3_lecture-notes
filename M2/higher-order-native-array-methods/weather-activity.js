@@ -99,4 +99,10 @@ function logSunnyDayLows(forecast) {}
  *
  * findDayByTemp(weatherData, 51) // => "3/11/2022"
  */
-function findDayByTemp(forecast, temperature) {}
+function findDayByTemp(forecast, temperature) {
+    forecast.find((element) => {
+        return temperature >= element.lowTemp && temperature <= element.highTemp
+    });   
+
+    }
+

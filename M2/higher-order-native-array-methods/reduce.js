@@ -84,7 +84,7 @@ console.log(stringConcat([1, 2, 3])); // "123"
  */
 
 function totalVotes(arr) {
- let voteCount = voters.filter((person) => {
+let voteCount = voters.filter((person) => {
     return person.voted === true 
   })
   console.log(voteCount)
@@ -97,7 +97,8 @@ function totalVotes(arr) {
   voteCount.forEach((person) => {
     totalCount += 1
   })
-  return totalCount;
+  return totalCount
+  
 } 
 
 const voters = [
@@ -124,7 +125,7 @@ console.log(totalVotes(voters)); // 7
 
 function shoppingSpree(arr) {
   let totalPrice = 0
-  totalPrice = arr.reduce((sum, elm) => {
+    totalPrice = arr.reduce((sum, elm) => {
     return sum.price + elm.price
   },0) 
   return totalPrice;
