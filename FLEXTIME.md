@@ -9,6 +9,8 @@ Examples of some of the uses for instructor led review sessions:
 - Exercise Review
 - Coding Best Practices
 - Extracurricular Technical Content
+  - Github Issues “bug ticketing” system
+  - Callbacks vs Promises baking activity
 
 ## Independent Activities
 
@@ -31,10 +33,13 @@ When you are given independent review time or study hall, we recommend the follo
 
 ### External Coding Exercises
 
-- Free Code Camp
-- Codecademy
-- Code Wars
-- Scrimba
+- [Free Code Camp](https://www.freecodecamp.org/)
+- [Codecademy](https://www.codecademy.com/)
+- [Code Wars](https://www.codewars.com/dashboard)
+- [Scrimba](https://scrimba.com/)
+- [LeetCode](https://leetcode.com/)
+- [Brilliant.org](https://brilliant.org/)
+- [Code Abbey](https://www.codeabbey.com/)
 
 ### External Technical Content
 
